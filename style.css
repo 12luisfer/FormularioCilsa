@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #e2dcfa;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.form-wrapper {
+    background-color: #3384d5;
+    border: 1.5px solid #000;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    background-color: #5cf35c;
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #4cdb4c;
+}
+
+.theme-btn {
+    background-color: #ffd3b4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.theme-btn:hover {
+    background-color: #e6bfa4;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Modo de alto contraste */
+body.contrast-mode {
+    background-color: #000;
+    color: rgb(17, 0, 255);
+}
+
+.contrast-mode h1 {
+    color: rgb(225, 16, 16);
+}
+
+.contrast-mode input, .contrast-mode select {
+    background-color: #333;
+    color: #ff0;
+    border: 1px solid #ff0;
+}
+
+.contrast-mode .submit-btn {
+    background-color: #ff0;
+    color: #000;
+}
+
+.contrast-mode .submit-btn:hover {
+    background-color: #e6e600;
+}
+
+.contrast-mode .theme-btn {
+    background-color: #ff0;
+    color: #000;
+}
